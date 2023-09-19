@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\seung\OneDrive\바탕 화면\대학교 수업\객체지향\아무개\.metadata\.plugins\org.eclipse.jdt.core
+2312675997.index
+1865797976.index
+1186216036.index
