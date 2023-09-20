@@ -4,13 +4,12 @@ public class Drill1 {
     public static void main(String[] args) {
         int cash;
         Scanner sc = new Scanner(System.in);
-        System.out.print("ì›”ê¸‰ì„ ì…ë ¥í•´ì£¼ì„¸ìš”: ");
+        System.out.print("¿ù±ŞÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä: ");
         cash = sc.nextInt();
         int tot;
 
         tot = cash * 120;
 
-        System.out.println("10ë…„ ë™ì•ˆì˜ ì €ì¶•ì•¡: "+tot);
+        System.out.println("10³â µ¿¾ÈÀÇ ÀúÃà¾×: "+total);
     }
-
 }
