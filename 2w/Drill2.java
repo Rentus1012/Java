@@ -4,20 +4,20 @@ public class Drill2 {
     public static void main(String[] args) {
         double width;
         Scanner sc = new Scanner(System.in);
-        System.out.print("ê°€ë¡œ: ");
+        System.out.print("°¡·Î: ");
         width = sc.nextDouble();
         
         double height;
-        System.out.print("ì„¸ë¡œ: ");
+        System.out.print("¼¼·Î: ");
         height = sc.nextDouble();
         
-        double parameter;//ë‘˜ë ˆ
+        double parameter;//µÑ·¹
         parameter = 2*(width + height);
         
         double area;
         area = width * height;
         
-        System.out.println("ë‘˜ë ˆ: "+parameter);
-        System.out.println("ë©´ì : "+area);
+        System.out.println("µÑ·¹: "+parameter);
+        System.out.println("¸éÀû: "+area);
     }
 }
