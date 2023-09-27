@@ -26,3 +26,16 @@ for (int e                 : list)
 
 핸들 방향(int), 속도(int), 경적(boolean)
 방향조절(i), 속도 가,감속(i), 소리 울리기(b)
+
+
+
+
+
+
+
+public class DeskLamp{
+    private boolean isOn;
+    public void turnOn(){ isOn = true; }
+    public void turnOff() { idOn = false; }
+}
+
