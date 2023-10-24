@@ -1,0 +1,61 @@
+부모 클래스와 자식 클래스가 추가됨.
+
+이걸 상속이라 함.
+
+
+상속의 예 (p.5)
+
+Q1. car 클래스의 객체를 생성.
+
+-필드의 개수는?: 1
+-메서드의 개수는?: 1
+
+Q2. elecrric car
+
+-필드: 1+1
+-메서드: 1+1
+
+
+멍머이 자바(?)
+
+프로젝트는 DogTest
+사용자 정의: Animal(부모)
+사용자 정의2: Dog(자식)
+
+그다음은 CircleTest
+
+shape
+Circle
+CircleTest
+
+
+
+상속과 접근 자정자
+
+private: 나만 사용
+protected: 상속관계 내에서만 사용.
+package: 같은 package로 묶일때 사용(이거 잘 안씀, 기본형임.)
+public: 모두가 사용
+
+
+
+
+person 클래스와 student 클래스 만들기
+
+클래스: Person(일반적인 사람) - 민감한 정보는 상속에서 가져가지 못함.
+ex) 주민등록 번호, 체중, 또 뭐가 있을까?
+그런거는 private int regNum; 으로 걸어놓는다.
+그 외의 이름이나 그런거는 누구나 접근 가능함.
+
+클래스: Student()
+
+
+this.필드명 = 지역변수명;
+this.radius = radius;
+
+this(); //생성자 호출
+super(); // 부모의 클래스 호출
+
+
+메서드 오버라이딩(재정의)를 해줄때는 @override 를 꼭 붙야줘야함.
+

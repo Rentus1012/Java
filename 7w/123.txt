@@ -1,0 +1,27 @@
+클래스: 필드 + 메서드
+정보 은닉에 대한 개념에서는 필드는 private, 메서드는 public 으로.
+--> isOn 이라는 필드는 다른 클래스에서 사용이 불가, 메서드를 사용해서 간접적으로 사용 가능.
+
+public class Lamp{
+    boolean isOn;
+    public void turnOn(){ isOn = True; }
+    public void trunOff(){ isOn = False; }
+}
+public class LampTest
+{
+    public static void main(String[] args
+    {
+        Lamg obj = new Lamp();//obj 생성, 초기화
+
+        obj.isOn = false; 값을 설정.(접근 제어가 private 라서 사용 불가능.)
+        obj.turnOn(); 메서드를 호출, 필드값을 설정-> 간접적으로 접근 가능.
+
+
+        System.out.println("전원은" + ((obj.turnOn)? "켜짐":"꺼짐")); 값을 읽어들임(접근). 그래서 사용 불가. private
+        System.out.println(""+ ((obj.isOn())???"켜짐"))
+    }
+}
+
+만약 객체명을 그대로 print 한다면?
+System.out.println(obj)
+#...명시적으로 obj.tostring()이라고 적음.
