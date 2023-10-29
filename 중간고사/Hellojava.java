@@ -6,7 +6,7 @@ public class Hellojava {
       boolean isTrue;
       isTrue = (32 < 42);
       double data = PI * 2;
-      System.out.println("isTrue = " + (isTrue ? "참" : "거짓"));
+      System.out.println("isTrue = " + (isTrue ? "True" : "Fslse"));
       //System.out.print(my1stVariable + (int)data);
       System.out.print(my1stVariable + (int)data+ "\n");
 // 이 줄에도 몇 가지 오류가 있습니다.
