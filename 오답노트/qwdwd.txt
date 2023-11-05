@@ -1,0 +1,28 @@
+1. String 형식으로 써짐. 그래서 String 형식으로 가야함.
+2. 문장에서 발견된 n의 개수3(띄어쓰기를 해서 0.1 감점)
+   int i = 0;
+   
+   while (i <s.length)
+   {
+        if (s[i+1] !='n')
+            continue;
+        n++;
+   }
+
+   for (char i : s)
+        if (i !='n')
+            continue;
+        n++;
+
+    내가 쓴 코드를 보면 while(1)로 쓰면 안되고 s의 length까지만 쓰게 해야 한다.
+
+3. 사진 참고
+
+4. getYear, getMonth, getDay 에서 return 을 y,m,d로 때리는것이 아니라 year, month, day로 때려야 함.
+   println 에서 괄호 안에 형식을 ()를 쓰면 안되고, 그냥 year,month,day 이런 형식으로 쓰셔야 함.
+
+
+5. Human UML 에서 Human(String Name, int Age)을 빼먹음
+   Student UML 에서 Student(String Name, int Age, String Major)을 빼먹음.
+
+tlqkf
