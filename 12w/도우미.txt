@@ -1,0 +1,65 @@
+1. 계산기 예제에서 버튼을 생성하는것.
+반복문을 통해서 버튼 객체를 다수 생성 가능.
+
+1) 과제 2의 버튼 여러개 생성하기. - for 문을 사용.
+2) string[] 배열을 선언, for 문을 이용.
+문자열 배열을 사용하지 않고 계산기의 연산 기호들을 넣을수 있는지?
+-> for (int i = 0;i < 10; i++)
+{
+    p1.add(new JButton("Button" + i));
+}
+무명 객체 (무명 클래스 x, 익명 클래스 x)
+-> 객체를 받는 변수를 선언하지 않고, 객체만 생성하는 경우
+-> nwe Button("Button" + i);
+
+
+for (int i = 0;i < 10;)
+{
+    JButton btn = new JButton(""+ i);
+    btn.addActionListener(this);
+    btn.setPreferredSize(new Dimension(100, 30));
+    panel.add(btn);
+}
+
+private String[] labels = {
+    //버튼
+};
+for (int i = 0;i<25;i++)
+{
+    buttons[i] = new JButton(labels[i]);
+    panel.add(button[i]);
+}
+//아 안해
+
+2. Wrapper 클래스: 데이터의 형태를 바꾼다.
+
+강제형반환을 이용한 방식도 가능, 제한적임.
+
+10.3 --> (int)10.3 = 10
+double numm = 10.3;
+System.out.println("%d", (int)num);
+
+"10" => 정수형 10?
+String str = "10";
+double num = Double,parseDouble(str);
+int num = int.parselnt(str);
+double num1 = 10.3;
+tf.setText(""+num1);
+tf.setText(Double.toString(num1));
+
+3. 버튼 이벤트 말고도, 동작을 처리하는 다른 이벤트들은 뭐가 있을까?
+-> 키코드, 마우스(클릭, 움직임, 스크롤)
+-> USB 장치 연결 인식 -- 시스템(OS)의 허락을 받아야 이벤트 처리 가능.
+
+4. 컴포넌트, 컨테이너 의 차이점은?
+
+컨테이너 속에 여러개의 컨포넌트들이 들어갈수 있다.
+컨테이너: JFrame, JPanel
+컴포넌트: JLabel. JButton, JTextField
+
+5. 버튼 하나를 생성, 이벤트 처리 코드를 구현하고자 한다.
+뭐를 해야할까?
+
+JButton but = new JButton("버튼");
+but.addActionListener(listener);
+//더 있음.
