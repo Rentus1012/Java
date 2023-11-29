@@ -1,0 +1,17 @@
+내부 클래스가 이벤트를 처리 하는 방법.
+-내부에 클래스를 생성, ActionListener 인터페이스를 구현한다.
+class MyListener implements ActionListener
+-이벤트를 등록하기 위해서 객체를 생성한다.
+MyListener listener = new MyListener();
+but.addListener(listener);
+or
+buttons.addListener(new Mylistener());
+
+프레임 클래스에 이벤트 처리를 구현하는 방법
+-프레임 클래스가 JFrame을 상속하는것 + 이벤트 처리 기능도 갖도록 함.
+class MyFrame extends JFrame implements ActionListener
+
+프레임 클래스의 메서드로 actionPerformed()를 가져와야함.
+
+람다식 -> 이름이 없는 메서드임.
+actionPerformed, ActionEvent e 생략 가능.
