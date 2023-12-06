@@ -7,7 +7,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-public class Calculator1 extends JFrame implements ActionListener {
+public class Calculator extends JFrame implements ActionListener {
 
     private JPanel panel;
     private JTextField tField;
@@ -26,13 +26,15 @@ public class Calculator1 extends JFrame implements ActionListener {
         panel = new JPanel();
         tField.setText("");
 
-        panel.setLayout(new GridLayout(4, 4, 3, 3));
-        buttons = new JButton[16];
+        panel.setLayout(new GridLayout(4, 4, 5, 5));//버튼이 16개 있을때, 4로 안하고 5로 하면 여백의 공간이 생김.
+        //그리고 나머지 두개는 가로, 세로의 틈.
+        buttons = new JButton[16];//버튼 16개
 
         for (int i = 0; i < 16; i++) {
             buttons[i] = new JButton(labels[i]);
             buttons[i].addActionListener(this);
             panel.add(buttons[i]);
+            //버튼액션을 추가함.
         }
         add(tField, BorderLayout.NORTH);
         add(panel, BorderLayout.CENTER);
@@ -40,7 +42,7 @@ public class Calculator1 extends JFrame implements ActionListener {
         pack();
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
-
+//레이아웃 설정.
     @Override
     public void actionPerformed(ActionEvent e) {
         String actionCommand = e.getActionCommand();
@@ -111,7 +113,7 @@ public class Calculator1 extends JFrame implements ActionListener {
         }
         return Double.toString(result);
     }
-
+//계산 연산자에 따름.
     public static void main(String args[]) {
         Calculator s = new Calculator();
     }
