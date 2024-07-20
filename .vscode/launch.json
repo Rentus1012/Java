@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PieChart",
+            "request": "launch",
+            "mainClass": "PieChart",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Calculator",
             "request": "launch",
             "mainClass": "Calculator",
